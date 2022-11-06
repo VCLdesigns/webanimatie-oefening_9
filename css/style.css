@@ -57,15 +57,48 @@
 /*
 /* Standards */
 body {
-  min-height: 100%; 
+  min-height: 100%;
   color: var(--kleur_zwart);
   background-color: var(--kleur_wit);
   font-family: var(--font-brood);
   font-size: 1.4rem;
   line-height: 150%;
 }
-	
-#container{
+
+#container {
   width: 1200px;
   margin: 0 auto;
+}
+#portaal,
+#deur,
+#sleutel {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#portaal {
+  position: relative;
+  width: 644px;
+  height: 645px;
+  background-image: url(../img/deurpost.jpg);
+}
+#deur, #sleutel{
+  position: absolute;
+}
+#deur {
+  width: 203px;
+  height: 455px;
+  background-image: url(../img/deur.png);
+  top: 151px;
+    left: 214px;
+}
+#sleutel{
+  width: 15px;
+  height: 32px;
+  background-image: url(../img/sleutel.png);
+  top: 8px;
+  left: 550px;
+}
+#deur:hover, #sleutel:hover{
+  cursor: grab;
 }
